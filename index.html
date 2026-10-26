@@ -159,3 +159,32 @@ $('checkoutForm').addEventListener('submit',e=>{e.preventDefault();if(!cartCount
 try{if(tg){tg.ready();tg.expand();tg.setHeaderColor('#101310');tg.setBackgroundColor('#101310');if(tg.disableVerticalSwipes)tg.disableVerticalSwipes();}}catch(e){}
 setLang(lang);
 </script></body></html>
+<style>
+/* SOI MARKET — high-energy Thai street market art direction */
+:root{--bg:#10100b;--surface:#1b1b12;--surface2:#262719;--text:#fff9e8;--muted:#c8c4a8;--gold:#e6ff22;--gold2:#ff4f24;--line:rgba(230,255,34,.34)}
+html,body{background:#10100b!important}
+body{background-image:radial-gradient(ellipse at 0 0,rgba(230,255,34,.15),transparent 30%),radial-gradient(ellipse at 100% 25%,rgba(255,79,36,.14),transparent 27%),repeating-linear-gradient(132deg,transparent 0 74px,rgba(230,255,34,.025) 75px 77px)!important}
+.topline{height:5px;background:linear-gradient(90deg,#e6ff22 0 35%,#ff4f24 35% 65%,#13d9bb 65%)}
+header{border-bottom:2px solid var(--gold);transform:skewY(-.4deg)}
+.logo{background:var(--gold);color:#10100b;border:2px solid #10100b;box-shadow:4px 4px 0 #ff4f24;font-weight:900}
+.brandname{font-weight:1000;letter-spacing:.11em;font-size:12px}
+.brandsub,.overline,.catlabel{color:var(--gold)!important;font-weight:900;letter-spacing:.17em}
+.hero h1{font-family:Impact,'Arial Black',sans-serif;font-weight:1000;text-transform:uppercase;letter-spacing:-.055em;text-shadow:3px 3px 0 #ff4f24}
+.hero h1 em{color:var(--gold);text-shadow:3px 3px 0 #13d9bb}
+.trust span,.trust>*{border:1px solid var(--gold)!important;border-radius:0!important;background:#1e2112!important;color:#fff9e8!important}
+.tab{border-radius:2px!important;border:1px solid rgba(230,255,34,.35)!important;text-transform:uppercase;font-weight:900;letter-spacing:.04em}
+.tab.active{background:var(--gold)!important;color:#10100b!important;border-color:var(--gold)!important;box-shadow:3px 3px 0 #ff4f24}
+.card{border:1px solid rgba(230,255,34,.42)!important;border-radius:2px!important;background:#191a10!important;box-shadow:4px 4px 0 rgba(255,79,36,.45)!important;overflow:hidden;transform:rotate(-.25deg)}
+.card:nth-child(even){transform:rotate(.35deg);box-shadow:4px 4px 0 rgba(19,217,187,.42)!important}
+.photo{background:#222!important;overflow:hidden!important;position:relative}
+.photo img{filter:brightness(1.12) saturate(1.24) contrast(1.07)!important;transform:scale(1.08) translateY(-1.5%);transform-origin:center top}
+.dish-no,.draft{display:none!important}
+.cardbody{background:#191a10!important}
+.dishname{font-weight:900!important;color:#fff9e8!important}
+.price{color:var(--gold)!important;font-weight:1000!important}
+.addbtn,.qty button,.cartbutton,#openCart,.submitOrder{border-radius:2px!important;font-weight:1000!important;text-transform:uppercase}
+.addbtn,.qty button{background:var(--gold)!important;color:#10100b!important;border:1px solid var(--gold)!important}
+#openCart{background:#e6ff22!important;color:#10100b!important;box-shadow:4px 4px 0 #ff4f24}
+input,select,textarea{border-radius:2px!important}
+@media(min-width:700px){.card:nth-child(3n){transform:rotate(.5deg)}}
+</style>
