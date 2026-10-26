@@ -266,3 +266,30 @@ input,select,textarea{border-radius:2px!important}
   border-radius:0!important;
 }
 </style>
+
+<style>
+/* Dish-only crop: zoom toward the image center to push embedded captions/prices out of view */
+.photo{aspect-ratio:1.08!important;overflow:hidden!important;background:#17130c!important;border-radius:3px!important}
+.photo img{
+  width:100%!important;height:100%!important;object-fit:cover!important;
+  object-position:50% 50%!important;transform:scale(1.48)!important;
+  transform-origin:50% 50%!important;clip-path:none!important;border-radius:0!important;
+}
+/* Stronger Thai night-market identity: chili red, mango yellow, jade green */
+:root{--bg:#100d09;--surface:#20170f;--surface2:#2d2115;--text:#fff5dd;--muted:#d7c3a0;--gold:#ffd52a;--gold2:#ff472e;--line:rgba(255,213,42,.35)}
+html,body{background:#100d09!important}
+body{background-image:radial-gradient(ellipse at 0 0,rgba(255,213,42,.16),transparent 32%),radial-gradient(ellipse at 100% 18%,rgba(255,71,46,.19),transparent 30%),repeating-linear-gradient(125deg,transparent 0 68px,rgba(255,213,42,.025) 69px 71px)!important}
+.topline{height:6px!important;background:linear-gradient(90deg,#ffd52a 0 28%,#ff472e 28% 58%,#08c9a2 58% 82%,#ffd52a 82%)!important}
+header{border-bottom:2px solid #ffd52a!important}
+.logo{background:#ffd52a!important;color:#171008!important;box-shadow:4px 4px 0 #ff472e!important}
+.hero h1{text-shadow:3px 3px 0 #ff472e!important}
+.hero h1 em{color:#ffd52a!important;text-shadow:3px 3px 0 #08c9a2!important}
+.card{background:#20170f!important;border:1px solid rgba(255,213,42,.42)!important;border-radius:4px!important;box-shadow:4px 4px 0 rgba(255,71,46,.42)!important}
+.card:nth-child(even){box-shadow:4px 4px 0 rgba(8,201,162,.4)!important}
+.cardbody{background:#20170f!important}
+.catlabel,.brandsub,.overline{color:#ffd52a!important}
+.price{color:#ffd52a!important}
+.addbtn,.qty button,#openCart{background:#ffd52a!important;color:#171008!important;border-radius:3px!important}
+.tab{border-radius:3px!important;text-transform:uppercase!important}
+.tab.active{background:#ff472e!important;color:#fff5dd!important;border-color:#ff472e!important;box-shadow:3px 3px 0 #08c9a2!important}
+</style>
