@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="#101310"><meta name="color-scheme" content="dark"><meta name="description" content="Bangkok Market food menu. Browse dishes, add to basket and order in Telegram.">
-<title>Bangkok Market — Kitchen</title>
+<meta name="theme-color" content="#101310"><meta name="color-scheme" content="dark"><meta name="description" content="SOI MARKET Bangkok street food and everyday essentials. Order directly through Telegram.">
+<title>SOI MARKET — Bangkok Street Delivery</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
 :root{--bg:#101310;--surface:#191d18;--surface2:#20251e;--text:#f5f0e6;--muted:#a6a797;--gold:#d0ae72;--gold2:#f0d7a3;--line:rgba(208,174,114,.23);--danger:#e7a38f;--safe:env(safe-area-inset-bottom,0px)}
@@ -16,11 +16,56 @@ header{display:flex;align-items:center;justify-content:space-between;gap:12px;pa
 .bottomcart{position:fixed;bottom:0;left:0;right:0;z-index:4;padding:10px 14px calc(10px + var(--safe));background:linear-gradient(180deg,#10131000,#101310 18%);pointer-events:none}.cartbutton{pointer-events:auto;max-width:720px;margin:0 auto;width:100%;border:1px solid #e4c689;border-radius:13px;background:linear-gradient(105deg,#e6ca8d,#c39b58);color:#171810;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;box-shadow:0 8px 32px #0006}.cartleft{display:flex;align-items:center;gap:10px}.carticon{font-size:20px}.carttitle{font-size:12px;font-weight:900;letter-spacing:.04em}.cartmeta{font-size:10px;opacity:.75;margin-top:3px}.carttotal{font:400 23px Georgia,serif;white-space:nowrap}
 .overlay{position:fixed;inset:0;z-index:10;background:#000b;display:none;align-items:flex-end;justify-content:center}.overlay.open{display:flex}.sheet{background:#151914;border:1px solid var(--line);border-radius:19px 19px 0 0;width:100%;max-width:700px;max-height:93dvh;overflow:auto;padding:18px 16px calc(20px + var(--safe));box-shadow:0 -18px 70px #0008}.sheethead{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}.sheethead h2{font:400 30px Georgia,serif;margin:0}.x{border:1px solid var(--line);background:#22281f;color:var(--text);width:34px;height:34px;border-radius:100px;font-size:19px}.cartitems{display:grid;gap:8px;margin:12px 0 17px}.cartrow{display:flex;gap:10px;align-items:center;background:#1d221c;padding:9px;border-radius:10px}.cartrow img{width:54px;height:54px;object-fit:cover;border-radius:7px}.cartrowmain{min-width:0;flex:1}.cartrowname{font:400 17px/1.1 Georgia,serif}.cartrowprice{font-size:10px;color:var(--gold);margin-top:5px}.lineqty{display:flex;align-items:center;gap:5px}.lineqty button{width:26px;height:26px;border:1px solid var(--line);border-radius:7px;background:#282d24;color:var(--gold2)}.totals{border-top:1px solid var(--line);padding-top:13px;display:grid;gap:7px}.totalrow{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.totalrow.strong{color:var(--text);font-weight:800;font-size:15px}.form{display:grid;gap:10px;margin-top:18px}.formlabel{font-size:9px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}.field{display:grid;gap:6px}.field input,.field textarea{width:100%;border:1px solid #394035;background:#1b2019;color:var(--text);border-radius:9px;padding:12px;font-size:13px}.field textarea{min-height:68px;resize:vertical}.cod{background:#1d251a;color:#c4d2b1;border:1px solid #33452a;border-radius:9px;padding:11px;font-size:11px;line-height:1.45}.submit{border:0;border-radius:10px;background:var(--gold);color:#171810;padding:14px;font-size:12px;font-weight:900;letter-spacing:.04em}.fineprint{font-size:10px;color:var(--muted);line-height:1.5}.toast{position:fixed;z-index:20;bottom:100px;left:15px;right:15px;max-width:520px;margin:auto;background:#272d23;border:1px solid var(--line);border-radius:10px;padding:13px 15px;display:none;color:var(--text);box-shadow:0 8px 30px #0008}.toast.show{display:block}.footer{padding:25px 0 20px;text-align:center;border-top:1px solid var(--line);margin-top:30px;color:#777d6e;font-size:9px;letter-spacing:.16em;text-transform:uppercase}
 @media(min-width:680px){.shell{padding-left:24px;padding-right:24px}.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.cardbody{padding:15px}.hero{padding-top:42px}.photo{aspect-ratio:1.24}.dishname{font-size:21px}.topline{border-radius:3px}}
+
+/* SOI MARKET — Bangkok underground visual refresh, 2026 */
+:root{--bg:#0c0e0b;--surface:#161a12;--surface2:#22271a;--text:#f4f3e9;--muted:#a9ad9b;--gold:#d8f12c;--gold2:#edff6b;--line:rgba(216,241,44,.28);--danger:#ff8e7b}
+html{background:#0c0e0b}
+body{background:radial-gradient(ellipse at 90% 4%,#29331a 0,transparent 38%),repeating-linear-gradient(0deg,transparent 0,transparent 57px,rgba(216,241,44,.016) 58px),#0c0e0b;font-family:Arial,Helvetica,sans-serif}
+.topline{height:6px;background:repeating-linear-gradient(110deg,#d8f12c 0 24px,#0c0e0b 24px 30px)}
+header{border-bottom:2px solid var(--gold);padding-top:20px;padding-bottom:20px}
+.logo{width:48px;height:48px;background:var(--gold);color:#0c0e0b;border:3px solid #f3f5d2;font:900 24px/1 Arial,sans-serif;letter-spacing:-.1em;transform:rotate(-6deg);box-shadow:4px 4px 0 #475516}
+.brandname{font-size:19px;font-weight:1000;letter-spacing:-.035em;font-family:Impact,"Arial Black",Arial,sans-serif}
+.brandsub{font-size:9px;color:var(--gold);letter-spacing:.18em}
+.lang{border:1px solid var(--gold);background:#10130d;border-radius:2px;font-weight:800}
+.hero{position:relative;overflow:hidden;margin-top:12px;padding:34px 16px 32px;border:2px solid var(--gold);background:radial-gradient(circle at 85% 12%,#33421b,transparent 45%),repeating-linear-gradient(-12deg,transparent 0 28px,rgba(216,241,44,.035) 29px 31px),#141811;box-shadow:7px 7px 0 #384418}
+.hero:after{content:"BKK / 001";position:absolute;right:-18px;top:21px;background:var(--gold);color:#0b0e09;padding:7px 28px;transform:rotate(13deg);font-size:11px;font-weight:1000;letter-spacing:.12em}
+.overline{font-weight:1000;color:var(--gold);font-size:11px}
+.hero h1{font:1000 clamp(46px,12vw,105px)/.86 Impact,"Arial Black",Arial,sans-serif;text-transform:uppercase;letter-spacing:-.025em;margin:20px 0 18px}
+.hero h1 em{font-style:normal;color:var(--gold);text-shadow:3px 3px 0 #465517}
+.hero p{font-size:13px;color:#d5d8c9;line-height:1.6;max-width:420px}
+.trust span{border-radius:0;background:#22281a;border:1px dashed var(--gold);color:#eaf2bd;font-weight:800;font-size:9px}
+.controls{background:rgba(12,14,11,.97)}
+.tab{border-radius:2px;border:1px solid #515b37;color:#d1d4c3;text-transform:uppercase;font-weight:900;letter-spacing:.04em}
+.tab.active{background:var(--gold);border-color:var(--gold);color:#0c0e0b}
+.search{border-radius:2px;border:1px solid #5c673e;background:#171c12;color:#fff}
+.sectionhead h2{font:900 32px/1 Impact,"Arial Black",Arial,sans-serif;text-transform:uppercase;letter-spacing:.02em}
+.count{font-weight:900;color:var(--gold)}
+.card{border-radius:2px;border:1px solid #424c2b;background:#161a13;box-shadow:4px 4px 0 #29331b}
+.photo{background:#242b19}
+.photo img{clip-path:none;filter:contrast(1.07) saturate(.94)}
+.dish-no,.draft{border-radius:0;background:#0b0e0be8;color:var(--gold);font-weight:900}
+.catlabel{font-weight:900;color:var(--gold)}
+.dishname{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:clamp(15px,3.7vw,20px);line-height:1.1}
+.price{font:900 22px/1 Arial,sans-serif;color:var(--gold)}
+.qty button,.addbtn{border-radius:2px;font-weight:900}
+.addbtn{background:var(--gold);border-color:var(--gold);color:#0b0d09}
+.bottomcart{background:linear-gradient(180deg,transparent,#0c0e0b 22%)}
+.cartbutton{background:var(--gold);border:2px solid #f2ffc3;border-radius:3px;box-shadow:5px 5px 0 #455519;color:#0b0e09}
+.carttotal{font:900 22px Arial,sans-serif}
+.sheet{background:#11150f;border-radius:4px 4px 0 0;border:2px solid var(--gold)}
+.sheethead h2{font:900 32px Impact,"Arial Black",Arial,sans-serif;text-transform:uppercase}
+.cartrow,.field input,.field textarea,.cod,.submit,.x{border-radius:2px}
+.cartrow{background:#202719}
+.cartrowname{font:800 16px Arial,sans-serif}
+.submit{background:var(--gold);font-weight:1000}
+.footer{color:#b8c191;border-top:2px solid #4b5927;font-weight:900}
+@media(min-width:680px){.hero{padding:58px 35px}.brandname{font-size:23px}}
+
 </style></head><body><div class="topline"></div><div class="shell">
-<header><div class="brand"><div class="logo">BM</div><div><div class="brandname">Bangkok Market</div><div class="brandsub" id="brandSub">Kitchen · crafted for you</div></div></div><select class="lang" id="lang" aria-label="Language"><option value="en">EN · English</option><option value="th">TH · ไทย</option><option value="ru">RU · Русский</option></select></header>
-<section class="hero"><div class="overline" id="eyebrow">THE KITCHEN MENU · BANGKOK</div><h1 id="heroTitle">Simple food.<br><em>Elevated.</em></h1><p id="heroText">A considered kitchen menu, prepared to order and carefully packed.</p><div class="trust"><span id="trust1">✦ MADE TO ORDER</span><span id="trust2">✦ CAREFULLY PACKED</span><span id="trust3">✦ CASH ON DELIVERY</span></div></section>
+<header><div class="brand"><div class="logo">SOI</div><div><div class="brandname">SOI MARKET</div><div class="brandsub" id="brandSub">BANGKOK UNDERGROUND DELIVERY</div></div></div><select class="lang" id="lang" aria-label="Language"><option value="en">EN · English</option><option value="th">TH · ไทย</option><option value="ru">RU · Русский</option></select></header>
+<section class="hero"><div class="overline" id="eyebrow">BANGKOK STREETS · DIRECT TO YOUR DOOR</div><h1 id="heroTitle">GOOD FOOD.<br><em>STREET VIBES.</em></h1><p id="heroText">Your Bangkok cravings, delivered. Pick your favorites and order in a few taps.</p><div class="trust"><span id="trust1">✦ MADE TO ORDER</span><span id="trust2">✦ CAREFULLY PACKED</span><span id="trust3">✦ CASH ON DELIVERY</span></div></section>
 <div class="controls"><div class="tabs" id="tabs"><button class="tab active" data-category="All" id="tabAll">All dishes</button><button class="tab" data-category="Pasta" id="tabPasta">Pasta</button><button class="tab" data-category="Meat & Steak" id="tabMeat">Meat & steak</button><button class="tab" data-category="Curry & Rice" id="tabRice">Curry & rice</button><button class="tab" data-category="Drinks" id="tabDrinks">Drinks</button></div><div class="searchwrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input class="search" id="search" placeholder="Search dishes…" autocomplete="off" type="search"></div></div>
-<div class="sectionhead"><h2 id="menuHeading">The menu</h2><div class="count" id="count">43 DISHES</div></div><main class="grid" id="grid"></main><footer class="footer" id="footer">BANGKOK MARKET · MADE WITH CARE</footer></div>
+<div class="sectionhead"><h2 id="menuHeading">The menu</h2><div class="count" id="count">43 DISHES</div></div><main class="grid" id="grid"></main><footer class="footer" id="footer">SOI MARKET · BANGKOK STREET DELIVERY</footer></div>
 <div class="bottomcart"><button class="cartbutton" id="openCart"><div class="cartleft"><span class="carticon">♢</span><div><div class="carttitle" id="cartTitle">YOUR BASKET</div><div class="cartmeta" id="cartMeta">0 items</div></div></div><div class="carttotal" id="cartTotal">฿0</div></button></div>
 <div class="overlay" id="overlay" aria-modal="true" role="dialog"><section class="sheet"><div class="sheethead"><h2 id="sheetTitle">Your basket</h2><button class="x" id="closeCart" aria-label="Close">×</button></div><div class="cartitems" id="cartItems"></div><div class="totals"><div class="totalrow"><span id="subtotalLabel">Food subtotal</span><span id="subtotalValue">฿0</span></div><div class="totalrow"><span id="deliveryLabel">Delivery fee</span><span id="deliveryValue">฿50</span></div><div class="totalrow strong"><span id="totalLabel">Estimated total</span><span id="totalValue">฿0</span></div></div><form class="form" id="checkoutForm"><div class="field"><label class="formlabel" for="customerName" id="nameLabel">FULL NAME</label><input id="customerName" required minlength="2" autocomplete="name" placeholder="Your name"></div><div class="field"><label class="formlabel" for="customerPhone" id="phoneLabel">PHONE</label><input id="customerPhone" required type="tel" autocomplete="tel" placeholder="Phone number"></div><div class="field"><label class="formlabel" for="customerAddress" id="addressLabel">DELIVERY ADDRESS</label><textarea id="customerAddress" required minlength="5" autocomplete="street-address" placeholder="Address, building, room and instructions"></textarea></div><div class="cod" id="cod">Cash on delivery · Delivery fee and total are confirmed by the shop.</div><button class="submit" id="submitOrder" type="submit">SEND ORDER TO SHOP</button><div class="fineprint" id="fineprint">The bot verifies current prices and stock before accepting the order. Prices marked as estimates may need owner confirmation.</div></form></section></div><div class="toast" id="toast"></div>
 <script>
