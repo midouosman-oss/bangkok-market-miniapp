@@ -188,3 +188,8 @@ header{border-bottom:2px solid var(--gold);transform:skewY(-.4deg)}
 input,select,textarea{border-radius:2px!important}
 @media(min-width:700px){.card:nth-child(3n){transform:rotate(.5deg)}}
 </style>
+<style>
+/* Crop 20% from every edge of dish photos to remove baked-in price labels */
+.photo{overflow:hidden!important}
+.photo img{transform:scale(1.67)!important;transform-origin:center center!important}
+</style>
