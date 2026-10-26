@@ -193,3 +193,28 @@ input,select,textarea{border-radius:2px!important}
 .photo{overflow:hidden!important}
 .photo img{transform:scale(1.67)!important;transform-origin:center center!important}
 </style>
+
+<style>
+/* SOI MARKET — round dish-photo crop */
+.card{overflow:hidden!important}
+.photo{
+  width:82%!important;
+  aspect-ratio:1!important;
+  height:auto!important;
+  margin:14px auto 0!important;
+  border-radius:50%!important;
+  overflow:hidden!important;
+  border:3px solid var(--gold)!important;
+  box-shadow:5px 5px 0 #ff4f24!important;
+  background:#222!important;
+}
+.photo img{
+  width:100%!important;height:100%!important;
+  object-fit:cover!important;
+  border-radius:50%!important;
+  clip-path:none!important;
+  transform:scale(1.2)!important;
+  transform-origin:center center!important;
+}
+.card:nth-child(even) .photo{box-shadow:5px 5px 0 #13d9bb!important;border-color:#13d9bb!important}
+</style>
