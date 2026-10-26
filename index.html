@@ -218,3 +218,26 @@ input,select,textarea{border-radius:2px!important}
 }
 .card:nth-child(even) .photo{box-shadow:5px 5px 0 #13d9bb!important;border-color:#13d9bb!important}
 </style>
+
+<style>
+/* Restore square dish cards; crop edges while keeping the dish centered */
+.photo{
+  width:100%!important;
+  aspect-ratio:1.08!important;
+  height:auto!important;
+  margin:0!important;
+  border-radius:0!important;
+  border:0!important;
+  box-shadow:none!important;
+  overflow:hidden!important;
+}
+.photo img{
+  width:100%!important;height:100%!important;
+  object-fit:cover!important;
+  border-radius:0!important;
+  clip-path:none!important;
+  transform:scale(1.25)!important;
+  transform-origin:center center!important;
+}
+.card{overflow:hidden!important}
+</style>
