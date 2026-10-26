@@ -168,7 +168,8 @@ document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setC
 $('checkoutForm').addEventListener('submit',e=>{e.preventDefault();if(!cartCount())return showToast(T[lang].required);if(!tg||typeof tg.sendData!=='function')return showToast(T[lang].preview);const customer={name:$('customerName').value.trim(),phone:$('customerPhone').value.trim(),address:$('customerAddress').value.trim()};if(customer.name.length<2||customer.phone.length<6||customer.address.length<5)return showToast(T[lang].required);const items=dishes.filter(d=>quantity(d.id)).map(d=>({sku:d.sku,quantity:quantity(d.id)}));const payload={type:'checkout',v:1,language:lang,customer,items};const raw=JSON.stringify(payload);if(raw.length>3500)return showToast('Please reduce the basket size.');$('submitOrder').disabled=true;$('submitOrder').textContent=T[lang].sent;try{tg.sendData(raw)}catch(err){showToast('Could not send order. Reopen the menu and try again.');$('submitOrder').disabled=false;$('submitOrder').textContent=T[lang].submit}});
 try{if(tg){tg.ready();tg.expand();tg.setHeaderColor('#101310');tg.setBackgroundColor('#101310');if(tg.disableVerticalSwipes)tg.disableVerticalSwipes();}}catch(e){}
 setLang(lang);
-</script></body></html>
+</script>
+
 <style>
 /* SOI MARKET — high-energy Thai street market art direction */
 :root{--bg:#10100b;--surface:#1b1b12;--surface2:#262719;--text:#fff9e8;--muted:#c8c4a8;--gold:#e6ff22;--gold2:#ff4f24;--line:rgba(230,255,34,.34)}
@@ -373,3 +374,5 @@ input,select,textarea{background:#fff4df!important;color:#382316!important;borde
 .drink-card .photo{aspect-ratio:1.08!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;background:transparent!important}
 .drink-card .photo img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center center!important;transform:none!important;clip-path:none!important;border-radius:0!important;filter:none!important}
 </style>
+
+</body></html>
