@@ -377,13 +377,13 @@ input,select,textarea{background:#fff4df!important;color:#382316!important;borde
 
 
 <style>
-/* FINAL OVERRIDE: aggressively crop printed price labels/text embedded in food photos */
-.food-card .photo{overflow:hidden!important}
-.food-card .photo img{
-  width:100%!important;height:100%!important;object-fit:cover!important;
-  object-position:center center!important;transform:scale(3.15)!important;
-  transform-origin:center center!important;clip-path:none!important;border-radius:0!important;
+/* FINAL OVERRIDE: crop all product photos to show the food/product only */
+.photo{overflow:hidden!important;position:relative!important}
+.photo img{
+  display:block!important;width:100%!important;height:100%!important;
+  object-fit:cover!important;object-position:50% 50%!important;
+  transform:scale(3.15)!important;transform-origin:50% 50%!important;
+  clip-path:none!important;border-radius:0!important;
 }
-.drink-card .photo img{transform:none!important;object-fit:contain!important}
 </style>
 </body></html>
