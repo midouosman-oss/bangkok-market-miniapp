@@ -115,6 +115,16 @@ header:after{content:"BANGKOK / STREET FOOD / EST. 2026";position:absolute;botto
 .footer{border-top:2px solid var(--gold);color:#c7d49c;font-weight:1000}
 @media(min-width:680px){.grid{gap:20px}.card:nth-child(3n){transform:rotate(-.45deg)}.photo{aspect-ratio:1.16}}
 
+
+/* Dish-only crop: zoom 2.28x to cut embedded price/text from food photos.
+   Drink photos remain exactly as currently framed. */
+.food-card .photo img{
+  transform:scale(2.28)!important;
+  transform-origin:center center!important;
+  object-fit:cover!important;
+}
+.food-card:hover .photo img{transform:scale(2.28)!important}
+.drink-card .photo img{transform:none!important;object-fit:contain!important}
 </style></head><body><div class="topline"></div><div class="shell">
 <header><div class="brand"><div class="logo">SOI</div><div><div class="brandname">SOI MARKET</div><div class="brandsub" id="brandSub">BANGKOK UNDERGROUND DELIVERY</div></div></div><select class="lang" id="lang" aria-label="Language"><option value="en">EN · English</option><option value="th">TH · ไทย</option><option value="ru">RU · Русский</option></select></header>
 <section class="hero"><div class="overline" id="eyebrow">BANGKOK STREETS · DIRECT TO YOUR DOOR</div><h1 id="heroTitle">GOOD FOOD.<br><em>STREET VIBES.</em></h1><p id="heroText">Your Bangkok cravings, delivered. Pick your favorites and order in a few taps.</p><div class="trust"><span id="trust1">✦ MADE TO ORDER</span><span id="trust2">✦ CAREFULLY PACKED</span><span id="trust3">✦ CASH ON DELIVERY</span></div></section>
